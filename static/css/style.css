@@ -1,0 +1,210 @@
+.center-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+body {
+    background-color: #D33510;
+}
+
+h1 {
+    color: white;
+}
+
+.types-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+p.card-text.col[data-type="skills"] {
+    color: black;
+    font-size: 11px;
+    background-color: white; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 5px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="water"] {
+    color: black;
+    font-size: 12px;
+    background-color: lightskyblue; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="ice"] {
+    color: white;
+    font-size: 12px;
+    background-color: turquoise; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="dragon"] {
+    color: white;
+    font-size: 12px;
+    background-color: mediumblue; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="fire"] {
+    color: white;
+    font-size: 12px;
+    background-color: red; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="grass"] {
+    color: white;
+    font-size: 12px;
+    background-color: green; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="bug"] {
+    color: black;
+    font-size: 12px;
+    background-color: greenyellow; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="poison"] {
+    color: white;
+    font-size: 12px;
+    background-color: purple; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="ghost"] {
+    color: black;
+    font-size: 12px;
+    background-color: violet; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="normal"] {
+    color: black;
+    font-size: 12px;
+    background-color: bisque; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="flying"] {
+    color: black;
+    font-size: 12px;
+    background-color: lightpink; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="electric"] {
+    color: black;
+    font-size: 12px;
+    background-color: yellow; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="ground"] {
+    color: white;
+    font-size: 12px;
+    background-color: brown; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="fairy"] {
+    color: black;
+    font-size: 12px;
+    background-color: pink; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="fighting"] {
+    color: white;
+    font-size: 12px;
+    background-color: orangered; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="rock"] {
+    color: white;
+    font-size: 12px;
+    background-color: gray; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="steel"] {
+    color: black;
+    font-size: 12px;
+    background-color: silver; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="psychic"] {
+    color: white;
+    font-size: 12px;
+    background-color: plum; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid black; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}
+
+p.card-text.col[data-type="dark"] {
+    color: white;
+    font-size: 12px;
+    background-color: black; /* para cambiar el fondo */
+    margin: 1px; /* para cambiar el margen */
+    border: 1px solid white; /* para agregar un borde */
+    padding: 1px; /* para agregar espacio dentro del elemento */
+    border-radius: 10px; /* para redondear los bordes */
+}

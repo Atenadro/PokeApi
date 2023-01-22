@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>POKEDEX</title>
+  </head>
+  <body>
+    <div class="card-deck container text-center center-div row" style="width: 800px; height: 500px;">
+      <h1 class="m-3" style="color: yellow;">POKEDEX</h1>
+      <table>
+        <tbody>
+          {% for i in range(0, pokemons|length, 3) %}
+            <tr>
+              {% for pokemon in pokemons[i:i+3] %}
+                <td>
+                  <div class="card text-center m-1 p-1 rounded border border-dark" style="width: 260px; height: 400px;">
+                    <div class="card-header">
+                      <h5 class="card-title">{{ pokemon.name.upper() }}  N.º {{ pokemon.id }}</h5>
+                    </div>
+                   <div>
+                    <img class="center-div p--2" src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}" style="width: 200px; height: 200px;">
+
+                   </div>
+                   
+                    <div class="types-container">
+                      {% for type in pokemon.types %}
+                        <p class="card-text col" data-type="{{ type.type.name }}">{{ type.type.name.title() }}</p>
+                      {% endfor %}
+                    </div>
+
+                    <div class="types-container m-2">
+                    <p class="card-text">Altura: {{ pokemon.height }}"</p>
+                    <p class="card-text">Peso: {{ pokemon.weight }}lb</p>
+                    </div>
+
+                    <h5>Skills</h5>
+                    <div class="types-container">
+                      {% for ability in pokemon.abilities %}
+                        <p class="card-text col" data-type="skills">{{ ability.ability.name.title() }}</p>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+  
+      <div class="pagination text-center container m-2">
+        <div class="row">
+          <div class="col-12 col-sm-2">
+            <button class="btn btn-light" {% if current_page == 1 %}disabled{% endif %}>
+              <a href="{{ url_for('get_pokemon', page=current_page-1) }}">Anterior</a>
+            </button>
+          </div>
+          <div class="col-12 col-sm-9">
+            {% for i in range(1, total_pages + 1) %}
+              <a href="{{ url_for('get_pokemon', page=i) }}" class="btn btn-light {% if i == current_page %}active{% endif %}">
+                {{ i }}
+              </a>
+            {% endfor %}
+          </div>
+          <div class="col-12 col-sm-1">
+            <button class="btn btn-light {% if current_page == total_pages %}disabled{% endif %}">
+              <a href="{{ url_for('get_pokemon', page=current_page+1) }}">Siguiente</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+    
+  </body>
+</html>
