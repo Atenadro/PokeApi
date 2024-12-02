@@ -21,7 +21,7 @@ Asegúrate de tener Python 3 y Flask instalados en tu computadora.
 Clona este repositorio o descarga el código fuente.
 Utiliza el comando pip install -r requirements.txt para instalar las dependencias necesarias.
 Ejecuta el archivo pokeapi.py con el comando python pokeapi.py
-Abre tu navegador en la dirección http://localhost:5000/ para ver la aplicación.
+Abre tu navegador en la dirección http://127.0.0.1:5000/pokemon/page/1 para ver la aplicación.
 
 Contribuciones:
 ¡Este proyecto es de código abierto y estamos encantados de recibir contribuciones! Si deseas contribuir, por favor abre una solicitud de extracción y describenos tu propuesta.
